@@ -1,0 +1,124 @@
+@import "../../config/variable";
+
+.examInitDataBox {
+  padding-top: 148px;
+  padding-bottom: 96px;
+  width: 100%;
+  height: 100%;
+
+  .dataBox {
+    padding: 20px 24px;
+    margin: 0 auto;
+    width: 580px;
+    float: none;
+    border: 1px solid @hr-color;
+    background: #fff;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+    &:last-child {
+      padding-top: 10px;
+      :global {
+        h4 {
+          margin-bottom: 2px;
+          color: @font-base;
+        }
+      }
+    }
+    :global {
+      .h3 {
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid @hr-color;
+      }
+      .ant-checkbox-wrapper {
+        display: block;
+        margin-top: 16px;
+      }
+      .ant-radio-wrapper {
+        display: block;
+        padding-top: 15px;
+        font-size: 16px;
+        color: @font-base;
+      }
+      .ant-checkbox-checked {
+        color: @font-title;
+      }
+      .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+        margin-left: 0;
+        margin-top: 18px;
+      }
+      .ant-btn-primary {
+        margin-top: 50px;
+        width: 116px;
+        height: 32px;
+        line-height: 32px;
+      }
+      .ant-progress-show-info .ant-progress-outer {
+        padding-right: calc(2em + 12px);
+        margin-right: calc(-2em - 12px);
+      }
+      .ant-progress-text {
+        margin-left: 12px;
+      }
+      .ant-progress-status-success .ant-progress-text {
+        color: @brand-primary;
+      }
+      .ant-progress-success-bg, .ant-progress-bg {
+        height: 12px !important;
+      }
+    }
+  }
+}
+.examDataModal {
+  :global {
+    .ant-modal-footer {
+      padding: 0;
+      padding-right: 10px;
+      height: 50px;
+      line-height: 50px;
+      background: @footer-bg-color;
+    }
+    .ant-modal-header {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      padding-left: 10px;
+      height: 48px;
+      line-height: 48px;
+      background: @footer-bg-color;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .ant-modal-close-x {
+      width: 30px;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+}
+.notice{
+  color: #fd3131;
+  text-align: center;
+  margin-top: 10px;
+}
+.enterPassword{
+  width: 280px;
+  display: inline-block;
+  margin-left: 12px;
+}
+:global .ant-form-item{
+  display: inline-block;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+:global .ant-form-explain{
+  margin-left: 44px;
+}
+.bread{
+  height:40px;
+  line-height: 40px;
+  padding-left: 10px;
+}

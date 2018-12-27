@@ -1,0 +1,73 @@
+.input{
+    width: 120;
+    margin-left: 10px;
+
+}
+.button{
+    float: right;
+    right: 10px;
+}
+.buttond{
+    float: right;
+    right: 0px;
+}
+
+.operation{
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+}
+.div{
+    line-height: 50px;
+    margin-top: 0;
+    background: #fff;
+
+    padding-left: 10px;
+    font-size: 14px;
+}
+.Exambox{
+
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    .ExamTable {
+       th :first-child {
+        margin-left: 15px
+       }
+       td{
+        padding-left: 15px;
+       }
+       td :last-child{
+        display: inline-block;
+        width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 21px;
+        line-height: 25px;
+        white-space: nowrap;
+       }
+    }
+    :global .ant-table-wrapper{
+     width: 100%;
+     margin-bottom: 14px;
+
+}
+}
+
+.Exampage{
+    height: 56px;
+    line-height: 56px;
+    background: rgb(245,246,248);
+    padding-left: 10px;
+    :global{
+        .ant-pagination-total-text:first-child{
+          height: 56px;
+          line-height: 56px;
+        }
+    }
+}
+:global .indent-level-0{
+    width: 0px !important
+}
+:global .ant-table-placeholder{
+    margin:0
+}

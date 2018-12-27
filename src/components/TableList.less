@@ -1,0 +1,159 @@
+@import "../config/variable";
+
+.examSceneListBox {
+
+  .litsName {
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  :global {
+    .ant-layout-content {
+      position: relative;
+    }
+
+    .ant-table-scroll {
+      height: 100%;
+      overflow: inherit;
+      border: 1px solid @hr-color;
+    }
+
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+      position: relative;
+      z-index: 10;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      border-bottom: 0;
+    }
+
+    .ant-table-body {
+      position: absolute;
+      width: 100%;
+      top: 17px;
+    }
+    .ant-table-thead > tr > th {
+      background: @footer-bg-color;
+      color: #1a1a1a;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 0;
+      padding-left: 10px;
+      height: 40px;
+    }
+    .ant-table-thead > tr > th:first-child, .ant-table-tbody > tr > td:first-child {
+      padding-left: 20px;
+    }
+
+    .ant-table-tbody > tr td:first-child,
+    .ant-table-thead > tr th:first-child {
+      min-width: 360px;
+      max-width: 500px;
+      width: auto;
+    }
+    .ant-table-tbody > tr td {
+      color: #4d4d4d;
+    }
+
+    .ant-table-tbody > tr:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+    .ant-pagination {
+      padding-right: 20px;
+      position: relative;
+      width: 100%;
+      text-align: right;
+
+      & > li:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .ant-select-dropdown-menu {
+        background: #fff;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.exameBox {
+  :global {
+    .ant-table-tbody > tr {
+      cursor: pointer;
+    }
+
+  }
+}
+
+.layoutBox {
+  padding: 10px;
+
+  header {
+    padding-bottom: 8px;
+    margin-top: -2px;
+  }
+  .seatBar {
+    padding-right: 10px;
+    padding-top: 11px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-bottom: 0;
+
+    .uploadBox {
+      display: inline-block;
+      height: 28px;
+      vertical-align: middle;
+      > span {
+        margin-right: 12px;
+      }
+    }
+    :global {
+      .ant-btn {
+        height: 28px;
+        vertical-align: middle;
+
+        & + .ant-btn {
+          margin-left: 12px;
+        }
+      }
+
+      .ant-progress {
+        padding-left: 10px;
+        width: 75%;
+      }
+      .ant-col-12:first-child {
+        padding-left: 10px;
+        padding-top: 4px;
+      }
+    }
+  }
+  :global {
+    .ant-pagination {
+      position: relative;
+      margin-top: 25px;
+      width: 100%;
+    }
+    .ant-pagination-total-text {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+:global {
+  .unlock-seat {
+    .ant-modal-body {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

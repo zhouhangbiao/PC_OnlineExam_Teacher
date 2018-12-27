@@ -1,0 +1,134 @@
+@import "../../config/variable";
+
+.examInitDataBox {
+  padding-top: 60px;
+  padding-bottom: 96px;
+  width: 100%;
+  height: 100%;
+  .dataBox {
+    padding: 20px 24px;
+    margin: 0 auto;
+    width:640px;
+    float: none;
+    border: 1px solid @hr-color;
+    background: #fff;
+
+    &:first-child {
+      margin-bottom: 20px;
+      height: 180px;
+    }
+    &:last-child {
+      :global {
+        h4 {
+          margin-bottom: 2px;
+          color: @font-base;
+        }
+      }
+    }
+    :global {
+      .h3 {
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+        border-bottom: 1px solid @hr-color;
+      }
+      .ant-checkbox-wrapper {
+        display: block;
+        margin-top: 16px;
+      }
+      .ant-radio-wrapper {
+        display: block;
+        padding-top: 15px;
+        font-size: 16px;
+        color: @font-base;
+      }
+      .ant-checkbox-checked {
+        color: @font-title;
+      }
+      .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+        margin-left: 0;
+        margin-top: 18px;
+      }
+      .ant-btn-primary {
+        margin-left: 80px;
+        width: 116px;
+        height: 32px;
+        line-height: 32px;
+      }
+      .exportData{
+        margin: 60px 0 0 60px;
+        width: 130px;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 60px;
+      }
+      .ant-progress-show-info .ant-progress-outer {
+        padding-right: calc(2em + 12px);
+        margin-right: calc(-2em - 12px);
+      }
+      .ant-progress-text {
+        margin-left: 12px;
+      }
+      .ant-progress-status-success .ant-progress-text {
+        color: @brand-primary;
+      }
+      .ant-progress-success-bg, .ant-progress-bg {
+        height: 12px !important;
+      }
+    }
+  }
+}
+.examDataModal {
+  :global {
+    .ant-modal-footer {
+      padding: 0;
+      padding-right: 10px;
+      height: 50px;
+      line-height: 50px;
+      background: @footer-bg-color;
+    }
+    .ant-modal-header {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      padding-left: 10px;
+      height: 48px;
+      line-height: 48px;
+      background: @footer-bg-color;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .ant-modal-close-x {
+      width: 30px;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+}
+.bread{
+  height:40px;
+  line-height: 40px;
+  padding-left: 10px;
+}
+body{
+  background: #f5f6f7;
+}
+.downLoad{
+  float: left;
+}
+.lastDownTime{
+  margin:12px 0 0 27px;
+  color: #4d4d4d;
+}
+:global .ant-upload-list{
+  display: inline-block;
+}
+.upLoadFile{
+  margin-left: 16px;
+}
+.exportPackage{
+  border: 1px solid #e6e6e6;
+  padding-left: 24px;
+  line-height: 50px;
+}
+

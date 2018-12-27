@@ -1,0 +1,59 @@
+.redcolor {
+  color: red
+}
+:global{
+  .ant-layout,.ant-layout-content{
+      background: #f5f6f7
+  }
+}
+.notice {
+  :global {
+    .ant-pagination-total-text {
+      float: right;
+    }
+  }
+}
+
+.title {
+  display: inline-block;
+  max-width: 90%;
+  height: 27px;
+  line-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.explain {
+  width: 400px
+}
+
+.layoutBox {
+  padding: 10px;
+
+  .layoutBoxTitle {
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+
+  :global {
+    .ant-table-wrapper {
+      border: 1px solid #e8e8e8;
+    }
+
+    .ant-table-thead > tr > th {
+      color: #1a1a1a;
+      background: #edeef0;
+    }
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td{
+      padding: 0;
+      padding-left: 10px;
+      height: 40px;
+    }
+    .ant-table-tbody > tr > td:first-child{
+      min-width: 360px;
+      max-width: 500px;
+    }
+  }
+}
